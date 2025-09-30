@@ -1,0 +1,15 @@
+{
+  "hash": "e879329d9902351ca785aa98547b78e4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Project B Examples\"\nauthor: \"Liangliang Zhang, Ph.D.\"\ndate-modified: last-modified\n---\n\n\n\n\n\n\n# Project B Plan Materials\n\n1. The **Project B Plan template**, is available as part of [the 431-data site](https://github.com/THOMASELOVE/431-data). It is called `431-projectA-plan-template.qmd`. \n    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/ProjectA-plan-template-431-2024).\n\n# Project B Portfolio Report Materials\n\n2. The **Project B Portfolio Report template** is also available as part of [the 431-data site](https://github.com/THOMASELOVE/431-data). It is called `431-projectA-portfolio-report-template.qmd`. \n    - An [HTML version is also available to view at RPubs](https://rpubs.com/TELOVE/ProjectA-portfolio-report-template-431-2024).\n\n:::{.callout-note}\n\nThe Template for the Portfolio Report is identical to the Template for the Project B Plan except that it:\n\n- deletes the old section 13, and \n- adds in headings for the new sections 13-16, while \n- moving the session information from section 14 to section 17.\n\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
