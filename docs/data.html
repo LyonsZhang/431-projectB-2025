@@ -8,7 +8,7 @@
 
 <meta name="author" content="Liangliang Zhang, Ph.D.">
 
-<title>Project B Data – 431 Project A</title>
+<title>Project B Data – 431 Project B</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">431 Project A</span>
+    <span class="navbar-title">431 Project B</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -182,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#sources-and-years-for-chr-2019-variables" id="toc-sources-and-years-for-chr-2019-variables" class="nav-link" data-scroll-target="#sources-and-years-for-chr-2019-variables"><span class="header-section-number">7.1</span> Sources and Years for CHR 2019 Variables</a></li>
   </ul></li>
-  <li><a href="#data-task-6.-re-order-variables-and-save-the-final-chr_2024-tibble" id="toc-data-task-6.-re-order-variables-and-save-the-final-chr_2024-tibble" class="nav-link" data-scroll-target="#data-task-6.-re-order-variables-and-save-the-final-chr_2024-tibble"><span class="header-section-number">8</span> Data Task 6. Re-order variables and save the final <code>chr_2024</code> tibble</a></li>
+  <li><a href="#data-task-6.-re-order-variables-and-save-the-final-chr_2025-tibble" id="toc-data-task-6.-re-order-variables-and-save-the-final-chr_2025-tibble" class="nav-link" data-scroll-target="#data-task-6.-re-order-variables-and-save-the-final-chr_2025-tibble"><span class="header-section-number">8</span> Data Task 6. Re-order variables and save the final <code>chr_2025</code> tibble</a></li>
   </ul>
 </nav>
     </div>
@@ -241,48 +241,48 @@ Important
 </div>
 <section id="what-data-will-i-use" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> What Data Will I Use?</h1>
-<p>Your Project B will use the 2024 version of the analytic data from <a href="https://www.countyhealthrankings.org/">County Health Rankings</a> (<strong>CHR 2024</strong>) for most of the work<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Some prior CHR data has been part of our course, but you’ll obtain, clean and manage a new data set for Project B.</p>
-<p>The key elements we’ll use are found in the <a href="https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation">Rankings Data &amp; Documentation section</a> at the County Health Rankings website, specifically the National Data &amp; Documentation section site for the 2024 County Health Rankings. Specifically, you’ll need to download four files in order to get and use the data:</p>
+<p>Your Project B will use the 2025 version of the analytic data from <a href="https://www.countyhealthrankings.org/">County Health Rankings</a> (<strong>CHR 2025</strong>) for most of the work<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Some prior CHR data has been part of our course, but you’ll obtain, clean and manage a new data set for Project B.</p>
+<p>The key elements we’ll use are found in the <a href="https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation">Rankings Data &amp; Documentation section</a> at the County Health Rankings website, specifically the National Data &amp; Documentation section site for the 2025 County Health Rankings. Specifically, you’ll need to download four files in order to get and use the data:</p>
 <ul>
-<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv">the 2024 CHR CSV Analytic Data</a> (a .csv file)</li>
-<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf">the 2024 Data Dictionary</a> (PDF)</li>
-<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20CHRR%20Technical%20Document_1.pdf">the 2024 Technical Document</a></li>
+<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2025.csv">the 2025 CHR CSV Analytic Data</a> (a .csv file)</li>
+<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2025.pdf">the 2025 Data Dictionary</a> (PDF)</li>
+<li><a href="https://www.countyhealthrankings.org/sites/default/files/media/document/2025%20CHRR%20Technical%20Document_1.pdf">the 2025 Technical Document</a></li>
 </ul>
-<p>In addition, when building the Codebook as part of your <a href="./plan.html">Project B Plan</a>, you’ll use <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this CHR 2024 Measures link</a> to obtain further details on the variables you select.</p>
+<p>In addition, when building the Codebook as part of your <a href="./plan.html">Project B Plan</a>, you’ll use <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this CHR 2025 Measures link</a> to obtain further details on the variables you select.</p>
 </section>
 <section id="developing-the-data-data-tasks" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Developing the Data: Data Tasks</h1>
 <p>Obtaining and cleaning your data takes a little while, but you can start at any time. First, in broad terms, here are the six data tasks you need to complete in order to build your Project B Plan.</p>
 <ol type="1">
-<li>Ingest the raw data from CHR 2024 into a tibble in R called <code>chr_2024_raw</code>, then filter these raw data to only the counties actually ranked by CHR.</li>
-<li>In addition to Ohio, select five more states (from a set we provide) to study, so that you wind up with at least 300 and no more than 800 counties in your study. Create a new <code>chr_2024</code> tibble that contains only the counties from your chosen six states (including Ohio).</li>
-<li>Reduce your data to a selection of nine variables (4 we specify below and 5 more you’ll select from options we provide), rename them in helpful ways, clean up problems, then save this smaller tibble as <code>chr_2024</code>.</li>
-<li>Create a new binary factor (categorical variable) from the fourth of the 5 variables you selected in the previous task, and add it to <code>chr_2024</code> so it now contains 10 variables.</li>
-<li>Pull into your <code>chr_2024</code> tibble data from the 2019 County Health Rankings on the fifth of the 5 variables selected in Task 3 using a data set we provide, so you can complete Analysis 3, and will now have 11 variables.</li>
-<li>Save the resulting <code>chr_2024</code> tibble as an R data set with 11 variables, and you will share this new <code>.Rds</code> file with us as part of your Project B Plan.</li>
+<li>Ingest the raw data from CHR 2025 into a tibble in R called <code>chr_2025_raw</code>, then filter these raw data to only the counties actually ranked by CHR.</li>
+<li>In addition to Ohio, select five more states (from a set we provide) to study, so that you wind up with at least 300 and no more than 800 counties in your study. Create a new <code>chr_2025</code> tibble that contains only the counties from your chosen six states (including Ohio).</li>
+<li>Reduce your data to a selection of nine variables (4 we specify below and 5 more you’ll select from options we provide), rename them in helpful ways, clean up problems, then save this smaller tibble as <code>chr_2025</code>.</li>
+<li>Create a new binary factor (categorical variable) from the fourth of the 5 variables you selected in the previous task, and add it to <code>chr_2025</code> so it now contains 10 variables.</li>
+<li>Pull into your <code>chr_2025</code> tibble data from the 2019 County Health Rankings on the fifth of the 5 variables selected in Task 3 using a data set we provide, so you can complete Analysis 3, and will now have 11 variables.</li>
+<li>Save the resulting <code>chr_2025</code> tibble as an R data set with 11 variables, and you will share this new <code>.Rds</code> file with us as part of your Project B Plan.</li>
 </ol>
 </section>
 <section id="data-task-1.-ingest-the-raw-data" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Data Task 1. Ingest the raw data</h1>
 <p>Begin an R Project just for Project B, and create a Quarto file within that project where you will do your data development work. Working from a template, or from your own best understanding of what works well for you, start by loading the packages you’ll need, including the <code>tidyverse</code> and any other packages you plan to use.</p>
-<p>You’ll use <code>read_csv()</code> to ingest your raw <code>.csv</code> file into R and call the resulting tibble <strong>chr_2024_raw</strong>. But as you do this, you’ll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this. To accomplish this, we’ll use the <code>skip = 1</code> command within your <code>read_csv()</code> call.</p>
+<p>You’ll use <code>read_csv()</code> to ingest your raw <code>.csv</code> file into R and call the resulting tibble <strong>chr_2025_raw</strong>. But as you do this, you’ll need to remove the top row from the .csv within your R code. You should probably look at the raw .csv in Excel or another spreadsheet system so that you know why we need to do this. To accomplish this, we’ll use the <code>skip = 1</code> command within your <code>read_csv()</code> call.</p>
 <p>At the same times, we’ll restrict which variables we ingest to the “raw value” versions of the main CHR variables, so that we focus only on variables we plan to actually consider using. This requires a <code>select()</code> statement after the <code>read_csv()</code> to pull in the variables we’ll need, including several whose names end with <code>rawvalue</code></p>
 <p>Sample code follows:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_url <span class="ot">&lt;-</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2024.csv"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2025.csv"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>chr_2024_raw <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_url, <span class="at">skip =</span> <span class="dv">1</span>, <span class="at">guess_max =</span> <span class="dv">4000</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>chr_2025_raw <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_url, <span class="at">skip =</span> <span class="dv">1</span>, <span class="at">guess_max =</span> <span class="dv">4000</span>,</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(fipscode, county, state, county_clustered, year,</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">ends_with</span>(<span class="st">"rawvalue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This code should create a <code>chr_2024_raw</code> tibble with 3195 rows (observations) and 90 columns (variables).</p>
-<p>To complete Task 1, you’ll need to augment the code above to restrict the <code>chr_2024_raw</code> data to include only the <strong>3088</strong> rows which have “county_clustered” values of 1, since the other rows will not be used by us in this project. At the end of Task 1, your <code>chr_2024_raw</code> tibble should have 3088 rows (counties) and 90 columns (variables).</p>
+<p>This code should create a <code>chr_2025_raw</code> tibble with 3195 rows (observations) and 90 columns (variables).</p>
+<p>To complete Task 1, you’ll need to augment the code above to restrict the <code>chr_2025_raw</code> data to include only the <strong>3088</strong> rows which have “county_clustered” values of 1, since the other rows will not be used by us in this project. At the end of Task 1, your <code>chr_2025_raw</code> tibble should have 3088 rows (counties) and 90 columns (variables).</p>
 </section>
 <section id="data-task-2.-select-six-states" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Data Task 2. Select six states</h1>
-<p>Now we’ll filter the <code>chr_2024_raw</code> data into a new tibble called <strong>chr_2024</strong> which contains the 300-800 rows (counties) you will actually study in your project.</p>
+<p>Now we’ll filter the <code>chr_2025_raw</code> data into a new tibble called <strong>chr_2025</strong> which contains the 300-800 rows (counties) you will actually study in your project.</p>
 <p>Your selection must include six of the states listed in the Table below, including:</p>
 <ul>
 <li>the 88 counties of Ohio, and</li>
@@ -307,7 +307,7 @@ Note
 </div>
 <section id="table-a.-states-you-can-select" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="table-a.-states-you-can-select"><span class="header-section-number">4.1</span> Table A. States You Can Select</h2>
-<p>The number of counties (with <code>county_clustered</code> values of 1 in CHR 2024) in each state (specified using its two-letter postal abbreviation) is listed below, for your convenience.</p>
+<p>The number of counties (with <code>county_clustered</code> values of 1 in CHR 2025) in each state (specified using its two-letter postal abbreviation) is listed below, for your convenience.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 7%">
@@ -484,7 +484,7 @@ Note
 <li>For example, one possible combination would be <code>IN</code> (92), <code>MD</code> (24), <code>NJ</code> (21), <code>OR</code> (36) and <code>WA</code> (39) with <code>OH</code> (88) yielding exactly 300 counties.</li>
 <li>another possibility would be <code>GA</code> (159), <code>TX</code> (244), <code>IL</code> (102), <code>MN</code> (87) and <code>KY</code> (120) with <code>OH</code> (88) yielding exactly 800 counties.</li>
 </ul>
-<p>After making your selection, and filtering the data, you should have a tibble called <code>chr_2024</code> which contains all of the 300-800 counties in your six states, and 90 columns. Be sure that the <code>state</code> variable is now a <em>factor</em> variable, rather than just a <code>character</code> variable in your tibble.</p>
+<p>After making your selection, and filtering the data, you should have a tibble called <code>chr_2025</code> which contains all of the 300-800 counties in your six states, and 90 columns. Be sure that the <code>state</code> variable is now a <em>factor</em> variable, rather than just a <code>character</code> variable in your tibble.</p>
 </section>
 </section>
 <section id="data-task-3.-select-analytic-variables" class="level1" data-number="5">
@@ -551,14 +551,14 @@ Note
 </section>
 <section id="information-to-help-select-and-build-a-codebook" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="information-to-help-select-and-build-a-codebook"><span class="header-section-number">5.2</span> Information to help select and build a codebook</h2>
-<p>The <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/2024%20CHRR%20Technical%20Document_1.pdf">2024 CHR Technical Document</a> file (PDF), and the <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf">2024 Data Dictionary</a> file (also PDF) are crucial here, as those are the ones that explain what the available variables mean, and how they should be labeled.</p>
+<p>The <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/2025%20CHRR%20Technical%20Document_1.pdf">2025 CHR Technical Document</a> file (PDF), and the <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2025.pdf">2025 Data Dictionary</a> file (also PDF) are crucial here, as those are the ones that explain what the available variables mean, and how they should be labeled.</p>
 <ul>
-<li>In building your codebook for the Project B Plan, you will also need look up each measure you select at <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this CHR 2024 Measures link</a>, so now would be a good time to do that, as well.</li>
+<li>In building your codebook for the Project B Plan, you will also need look up each measure you select at <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this CHR 2025 Measures link</a>, so now would be a good time to do that, as well.</li>
 </ul>
 </section>
 <section id="table-b.-variables-you-can-select" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="table-b.-variables-you-can-select"><span class="header-section-number">5.3</span> Table B. Variables You Can Select</h2>
-<p>You will select <strong>five different</strong> variables from the list in Table B of variables in the CHR 2024 report.</p>
+<p>You will select <strong>five different</strong> variables from the list in Table B of variables in the CHR 2025 report.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -786,7 +786,7 @@ Note
 <ul>
 <li>The variable <code>v001</code> is very tempting to use an outcome. That’s OK, but be sure to consider the use of <code>v127</code> as an outcome if mortality interests you. Do not use <code>v001</code> and <code>v127</code> in the same Analysis.</li>
 <li>A serious look at the impact of race/ethnicity is beyond the scope of Project B. If you are interested in studying race and ethnicity and their impact on a health outcome, we suggest using <code>v126</code>, (or its inverse, 1 - <code>v126</code>), to incorporate this dimension as a predictor. This is because there’s more variation in the <code>v126</code> data across the reported counties than other variables describing race or ethnicity.</li>
-<li>The <strong>brief label from CHR</strong> column in Table B are shown in the first (deleted in R) row in the raw .csv file for 2024, and are also specified in the <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2024.pdf">2024 CHR Data Dictionary</a> PDF file.</li>
+<li>The <strong>brief label from CHR</strong> column in Table B are shown in the first (deleted in R) row in the raw .csv file for 2025, and are also specified in the <a href="https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2025.pdf">2025 CHR Data Dictionary</a> PDF file.</li>
 <li>A key issue for developing these variables is correctly specifying the units of measurement (note that the indexes don’t have units) so that you should be careful to note that in selecting your variables.</li>
 </ul>
 </div>
@@ -804,7 +804,7 @@ Note
 </section>
 <section id="data-task-4.-create-a-factor-for-the-analysis-2-predictor" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Data Task 4. Create a factor for the Analysis 2 predictor</h1>
-<p>Create a new categorical variables (factor) based on your fourth variable, and add this new factor to your <strong>chr_2024</strong> tibble. You’ll also retain the original (quantitative) version of this variable, so your tibble will now have 10 variables. I’ll describe the three steps here, and then show some sample code.</p>
+<p>Create a new categorical variables (factor) based on your fourth variable, and add this new factor to your <strong>chr_2025</strong> tibble. You’ll also retain the original (quantitative) version of this variable, so your tibble will now have 10 variables. I’ll describe the three steps here, and then show some sample code.</p>
 <ol type="1">
 <li>Divide the values in your variable 4 into three groups, as follows:
 <ul>
@@ -816,24 +816,24 @@ Note
 <ul>
 <li>This should yield (from your original set of 300-800 counties) between 120 and 320 counties having the low level, 120-320 having the high level, and 60-160 missing values in the new factor variable.</li>
 </ul></li>
-<li>Add the resulting (binary) factor to your <strong>chr_2024</strong> tibble.</li>
+<li>Add the resulting (binary) factor to your <strong>chr_2025</strong> tibble.</li>
 </ol>
 <p>Here’s some sample code for these three steps.</p>
 <p>To establish our cutpoints, we should look at the 40th and 60th percentiles of the existing data for our planned predictor for Analysis 2, which I’ll call <code>varXXX</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>chr_2024 <span class="sc">|&gt;</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>chr_2025 <span class="sc">|&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">q40 =</span> <span class="fu">quantile</span>(varXXX, <span class="fu">c</span>(<span class="fl">0.4</span>)),</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">q60 =</span> <span class="fu">quantile</span>(varXXX, <span class="fu">c</span>(<span class="fl">0.6</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Suppose those results were 7 and 12. Then we want to create a three-level variable where values of 7 and lower will fall in the “Low” group, and values of 12 and higher will fall in the “High” group<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>chr_2024 <span class="ot">&lt;-</span> chr_2024 <span class="sc">|&gt;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>chr_2025 <span class="ot">&lt;-</span> chr_2025 <span class="sc">|&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">varXXX_grp =</span> <span class="fu">case_when</span>(</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    varXXX <span class="sc">&lt;=</span> <span class="dv">7</span> <span class="sc">~</span> <span class="st">"Low"</span>,</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    varXXX <span class="sc">&gt;=</span> <span class="dv">12</span> <span class="sc">~</span> <span class="st">"High"</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">varXXX_grp =</span> <span class="fu">factor</span>(varXXX_grp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This should result in a <code>varXXX_grp</code> variable being in your <code>chr_2024</code> now, where about 40% of our subjects in the High group and about 40% in the Low group, with the rest now listed as missing, and the <code>varXXX_grp</code> variable is now a factor. So you’ll want to demonstrate that all of those things are true in your case.</p>
+<p>This should result in a <code>varXXX_grp</code> variable being in your <code>chr_2025</code> now, where about 40% of our subjects in the High group and about 40% in the Low group, with the rest now listed as missing, and the <code>varXXX_grp</code> variable is now a factor. So you’ll want to demonstrate that all of those things are true in your case.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -868,11 +868,11 @@ Note
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>chr_2019 <span class="ot">&lt;-</span> chr_2019_raw <span class="sc">|&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(fipscode, vXXX_rawvalue)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Next, join together your chr_2024 data and this new file by levels of <code>fipscode</code>, using the <code>left_join()</code> function from the <code>dplyr</code> package:</p>
+<p>Next, join together your chr_2025 data and this new file by levels of <code>fipscode</code>, using the <code>left_join()</code> function from the <code>dplyr</code> package:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>chr_2024 <span class="ot">&lt;-</span> <span class="fu">left_join</span>(chr_2024, chr_2019, <span class="at">by =</span> <span class="st">"fipscode"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>chr_2025 <span class="ot">&lt;-</span> <span class="fu">left_join</span>(chr_2025, chr_2019, <span class="at">by =</span> <span class="st">"fipscode"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Now look at your result, and rename the two versions of your Analysis 3 outcome to be something like <strong>adult_smoking_2024</strong> and <strong>adult_smoking_2019</strong>.</p>
+<p>Now look at your result, and rename the two versions of your Analysis 3 outcome to be something like <strong>adult_smoking_2025</strong> and <strong>adult_smoking_2019</strong>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -883,7 +883,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Across all of the states you might have selected back in Data Task 3, each of these variables has information for <strong>2,958</strong> ranked counties in CHR 2024. However, <strong>14</strong> counties were ranked in CHR 2024 but not in CHR 2019. When we join the data in CHR 2024 to the data in CHR 2019, there are <strong>14</strong> counties with missing CHR 2019 data on these variables.</p>
+<p>Across all of the states you might have selected back in Data Task 3, each of these variables has information for <strong>2,958</strong> ranked counties in CHR 2025. However, <strong>14</strong> counties were ranked in CHR 2025 but not in CHR 2019. When we join the data in CHR 2025 to the data in CHR 2019, there are <strong>14</strong> counties with missing CHR 2019 data on these variables.</p>
 <p><strong>The affected states</strong> are: CO (1 county with missing CHR 2019 data), ID (1), KS (2), MS (1), MT (2), ND (2), NE (1), OR(1), SD (1), TX (1) and UT (1).</p>
 <p>As a result, depending on what states you selected, this joining may or may not produce missing values in your CHR 2019 version of the Analysis 3 outcome.</p>
 </div>
@@ -891,7 +891,7 @@ Note
 <section id="sources-and-years-for-chr-2019-variables" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="sources-and-years-for-chr-2019-variables"><span class="header-section-number">7.1</span> Sources and Years for CHR 2019 Variables</h2>
 <p>County Health Rankings data for variables reported in CHR 2019 eligible for use in Project B Analysis 3 are listed below, with their descriptions, including the source and year(s) in which they were gathered. Please incorporate this information into your codebook.</p>
-<p>Similar information for CHR 2024 variables is found at <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this link</a>, and should also be placed in your codebook.</p>
+<p>Similar information for CHR 2025 variables is found at <a href="https://www.countyhealthrankings.org/health-data/county-health-rankings-measures">this link</a>, and should also be placed in your codebook.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 10%">
@@ -972,9 +972,9 @@ Note
 </table>
 </section>
 </section>
-<section id="data-task-6.-re-order-variables-and-save-the-final-chr_2024-tibble" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Data Task 6. Re-order variables and save the final <code>chr_2024</code> tibble</h1>
-<p>Revise the <strong>chr_2024</strong> tibble to arrange your final tibble’s 11 variables in the following order:</p>
+<section id="data-task-6.-re-order-variables-and-save-the-final-chr_2025-tibble" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Data Task 6. Re-order variables and save the final <code>chr_2025</code> tibble</h1>
+<p>Revise the <strong>chr_2025</strong> tibble to arrange your final tibble’s 11 variables in the following order:</p>
 <ol type="1">
 <li><code>fipscode</code>,</li>
 <li><code>state</code>,</li>
@@ -984,11 +984,11 @@ Note
 <li>your selected (and renamed) variable 3 (Analysis 2 outcome),</li>
 <li>your binary factor describing variable 4 (Analysis 2 predictor),</li>
 <li>your original (quantitative version) of variable 4,</li>
-<li>your selected (and renamed) variable 5 (from CHR 2024),</li>
+<li>your selected (and renamed) variable 5 (from CHR 2025),</li>
 <li>your selected (and renamed) variable 5 (from CHR 2019),</li>
 <li>the <code>county_clustered</code> variable (whose values must all be 1)</li>
 </ol>
-<p>Save this final <strong>chr_2024</strong> tibble with 11 variables as an R data set (.Rds file) in your R Project, with the file name <strong>chr_2024_YOURNAME.Rds</strong>. You will share this file with us as part of your Project B Plan. If you like, you can store this <code>.Rds</code> file in a <code>data</code> subdirectory within your R Project.</p>
+<p>Save this final <strong>chr_2025</strong> tibble with 11 variables as an R data set (.Rds file) in your R Project, with the file name <strong>chr_2025_YOURNAME.Rds</strong>. You will share this file with us as part of your Project B Plan. If you like, you can store this <code>.Rds</code> file in a <code>data</code> subdirectory within your R Project.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1001,7 +1001,7 @@ Note
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>There are several ways to rearrange columns in a tibble, including the <code>select()</code> and/or <code>relocate()</code> functions from <code>dplyr</code>.</li>
-<li>After your cleaning is done, each row in your <code>chr_2024</code> tibble should contain all of the counties within the 6 states you are studying, and no other counties should be included in your tibble.</li>
+<li>After your cleaning is done, each row in your <code>chr_2025</code> tibble should contain all of the counties within the 6 states you are studying, and no other counties should be included in your tibble.</li>
 <li>If data for some counties are missing in the raw data for one or more of your variables (and this will be true at least for your binary factor representing low and high levels of variable 4, and perhaps also for your CHR 2019 version of variable 5, and maybe even for some of your other selected variables), then these data should be indicated as missing (using NA) in the tibble.</li>
 <li>There is no need to set a seed in this process, as you are not doing anything that involves selecting a random sample.</li>
 </ol>
@@ -1450,7 +1450,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Fall 2024: PQHS/CRSP/MPHP 431 at CWRU with Professor Zhang</p>
+<p>Fall 2025: PQHS/CRSP/MPHP 431 at CWRU with Professor Zhang</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
